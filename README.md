@@ -3,7 +3,7 @@ This project focuses on benchmarking the following sorting algorithms: Bubble So
 ## What each file contains
 This is a summary of the contents of each file / directory. Additional details may be found inside the actual files.
 
-`generate_lists.py`: contains functions designed to generate lists with specific properties for benchmarking sorting algorithm.
+`generate_lists.py`: contains functions designed to generate lists with specific properties for benchmarking the sorting algorithms.
 
 `sorting_algorithms.py`: contains the implementation of the sorting algorithms that were benchmarked.
 
@@ -37,7 +37,7 @@ Install WSL on Windows via PowerShell with administrative privileges:
 ```powershell
 wsl --install
 ```
-Follow the installation prompts to set up a preferred Linux distribution, such as Ubuntu.
+Follow the installation prompts to set up a preferred Linux distribution, such as Ubuntu. After setting up the Linux environment, clone your project repository to your local machine. 
 
 ### Configuring PYTHONPATH
 The project directory must be added to the PYTHONPATH to allow Python to locate and import the necessary modules. This configuration can be set by:
@@ -47,12 +47,14 @@ export PYTHONPATH="/path/to/your/project:$PYTHONPATH"
 `/path/to/your/project` should be adjusted to the actual project path. This command should be executed in the Unix terminal where main.py will be run. For a persistent setup, add this line to the shell's startup file (e.g., .bashrc or .bash_profile).
 
 ### Running `main.py`
-After setting up the environment, main.py can be executed directly from the terminal. The script requires a command-line argument specifying the type of list data:
+First, ensure you are in the project's root directory where main.py is located. After setting up the environment, main.py can be executed directly from the terminal. The script requires a command-line argument specifying the type of list data:
 ```bash
 python3 main.py [type]
 ```
 Here, [type] can be replaced with random, ordered, reversed, partial, or duplicated, depending on the desired benchmarking scenario.
-After running `main.py`, a new directory will be created where the 2 csv files will be outputted. The summary_csv file is created after the script finishes, while the detailed_csv is created dynamically.
+After running `main.py`, a new directory will be created where the 2 csv files will be outputted:
+- summary_csv: Generated after the script completes.
+- detailed_csv: Created dynamically during the script's execution.
 
 Just a heads up, be prepared for varying execution times:
 
