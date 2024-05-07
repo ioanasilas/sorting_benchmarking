@@ -37,7 +37,7 @@ Install WSL on Windows via PowerShell with administrative privileges:
 ```powershell
 wsl --install
 ```
-Follow the installation prompts to set up a preferred Linux distribution, such as Ubuntu. After setting up the Linux environment, clone your project repository to your local machine. 
+Follow the installation prompts to set up a preferred Linux distribution, such as Ubuntu. After setting up the Linux environment, clone the project repository to your local machine. 
 
 ### Configuring PYTHONPATH
 The project directory must be added to the PYTHONPATH to allow Python to locate and import the necessary modules. This configuration can be set by:
